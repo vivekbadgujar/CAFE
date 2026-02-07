@@ -52,10 +52,11 @@ cp frontend/.env.example frontend/.env
 
 ## Deployment Guide
 
-### Backend (Render/Railway)
+### Backend (Render/Railway/Vercel)
 - Set environment variables from `backend/.env.example`.
 - Ensure MongoDB Atlas connection string is configured.
 - Set `CORS_ORIGIN` to your deployed frontend/admin URLs.
+- If deploying on Vercel, use the `/backend` project root and keep `backend/vercel.json` (serverless entry at `backend/api/index.js`).
 
 ### Frontend (Vercel)
 - Set the project root to `/frontend` (or deploy the frontend repo directly).
